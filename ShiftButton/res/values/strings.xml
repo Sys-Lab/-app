@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShiftButton</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Warning</string>
+    <string name="message">Click OK to exit</string>
+    <string name="str_ok">OK</string>
+    <string name="text1">text1: This is layout1</string>
+    <string name="text2">text2: This is layout2</string>
+    <string name="result">result: Please input first~</string>
+    <string name="button1">button1: Go to Layout2</string>
+    <string name="button2">button2: Go to Layout1</string>
+    <string name="button3">button3: Calculate</string>
+    <string name="button4">button4: Go to Activity1</string>
+    <string name="button5">button5: Exit</string>
+    <string name="button6">button6: Return</string>
+    <string name="button7">button7: Count</string>
+    <string name="sex1">sex1: 男</string>
+    <string name="sex2">sex2: 女</string>
+    <string name="radioGroup">radioGroup: 性别</string>
+    <string name="EditText">EditText: 请输入身高&#8230;</string>
+    <string name="test">test: Here I am</string>
+
+</resources>
