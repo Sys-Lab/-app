@@ -8,21 +8,26 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class serverthread extends Thread {
+/*服务器线程*/
+public class ServerThread extends Thread {
 Socket socket=null;
-public serverthread(Socket socket){
+public  ServerThread(Socket socket){
 	this.socket=socket;
 }
 public void run(){
-	InputStream is;
+	InputStream is = null;
+	InputStreamReader isr=null;
+	BufferedReader br=null;
+	OutputStream os=null;
+	PrintWriter pw=null;
 	try {
 		is = socket.getInputStream();
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	InputStreamReader isr=new InputStreamReader(is);
-	BufferedReader br=new BufferedReader(isr);
+	 isr=new InputStreamReader(is);
+	 br=new BufferedReader(isr);
 	String info=null;
 	try {
 		while((info=br.readLine())!=null){
@@ -34,25 +39,53 @@ public void run(){
 	}
 	try {
 		socket.shutdownInput();
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	try {
-		InputStream a=socket.getInputStream();
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	OutputStream os = null;
-	try {
 		os = socket.getOutputStream();
+ pw=new PrintWriter(os);
+		pw.write("欢迎");
+		pw.flush();
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+	}finally{
+		if(pw!=null)
+			pw.close();
+		if(os!=null)
+			try {
+				os.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		if(br!=null)
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		if(isr!=null)
+			try {
+				isr.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		if(is!=null)
+			try {
+				is.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		if(socket!=null)
+			try {
+				socket.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
-	PrintWriter pw=new PrintWriter(os);
-	pw.write("欢迎！");
-	pw.flush();
-
+	
+	
+}
 }
