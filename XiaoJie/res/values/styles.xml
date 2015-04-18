@@ -1,0 +1,77 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="bt01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+    	<item name="android:paddingTop">10dip</item>
+    	<item name="android:paddingBottom">10dip</item>
+    	<item name="android:paddingLeft">50dip</item>
+    	<item name="android:paddingRight">50dip</item>
+    	<item name="android:background">@drawable/presschangebackground</item>
+    	<item name="android:textColor">@drawable/white</item>
+    	<item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="tv01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+        <style name="tv02">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:textColor">@drawable/darkblue</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+    
+    <style name="et01">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+    
+    <style name="view01">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">12sp</item>
+    </style>
+    
+    <style name="view02">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30sp</item>
+    </style>
+    
+    <style name="view03">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2sp</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:background">@drawable/blue</item>
+    </style>
+
+</resources>
