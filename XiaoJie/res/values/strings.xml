@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Lollipop</string>
+    <string name="app_name">校街</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     
@@ -11,6 +11,7 @@
 	<string name="about">Version 1.1.0</string>
 	
 	<string name="tv_register">Register</string>
+	<string name="tv_essentialinformation">Essential Information</string>
 	<string name="tv_username">User Name:</string>
 	<string name="username">User Name</string>
 	<string name="tv_gender">Gender:</string>
@@ -30,6 +31,9 @@
 	<string name="tv_grade">Grade:</string>
 	<string name="tv_studentid">Student ID:</string>
 	<string name="studentid">Student ID</string>
+	
+	<string name="image">image</string>
+	<string name="listview">ListView</string>
 
 	
 </resources>

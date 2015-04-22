@@ -18,7 +18,7 @@ public class SignIn extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
         
-        Button login = (Button)findViewById(R.id.signin);
+        Button login = (Button)findViewById(R.id.bt_signin);
         Button signup = (Button)findViewById(R.id.signup);
         Button forget = (Button)findViewById(R.id.forget);
         
@@ -73,7 +73,7 @@ public class SignIn extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.sign_in, menu);
+        getMenuInflater().inflate(R.menu.menu_sign_in, menu);
         return true;
     }
     

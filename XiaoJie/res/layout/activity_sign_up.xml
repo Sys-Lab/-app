@@ -1,179 +1,194 @@
-<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
-    android:id="@+id/ScrollView" android:layout_width="fill_parent"  
-    android:layout_height="wrap_content" android:scrollbars="vertical">  
-    <LinearLayout android:id="@+id/LinearLayout"  
-        android:orientation="vertical" android:layout_width="fill_parent"  
-        android:layout_height="wrap_content">  
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">  
+    <LinearLayout
+        android:id="@+id/LinearLayout"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+   		android:layout_marginRight="5dp"
+        android:orientation="vertical" >  
 	    
-			<View style="@style/view02" />
-			<TextView
-		        android:id="@+id/signup_tv_register"
-		        style="@style/tv02"
-		        android:text="@string/tv_register" />
-		    <View style="@style/view03" />
-		    <View style="@style/view01" />
-		    <View style="@style/view01" />
-		    
-		    <TextView
-		        android:id="@+id/signup_tv_username"
-		        style="@style/tv01"
-		        android:text="@string/tv_username" />
-		
-		    <EditText
-		        android:id="@+id/signup_et_username"
-		        style="@style/et01"
-		        android:ems="10"
-		        android:hint="@string/username"
-		        android:inputType="textPersonName" >
-		
-		        <requestFocus />
-		    </EditText>
-		    
-		    <View style="@style/view01" />
-		    
-		    <TextView
-		        android:id="@+id/signup_tv_gender"
-		        style="@style/tv01"
-		        android:text="@string/tv_gender" />
-			
-			<RadioGroup
-		        android:id="@+id/gender_rg"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_marginLeft="10dip"
-		        android:layout_marginRight="10dip"
-		        android:orientation="horizontal"
-		        android:checkedButton="@+id/gender_gb_male"
-		        android:contentDescription="@string/gender" >
-			        <RadioButton
-			            android:id="@+id/gender_gb_male"
-			            android:layout_width="wrap_content"
-			            android:layout_height="wrap_content"
-			            android:layout_weight="1"
-			            android:text="@string/male" />
-			        <RadioButton
-			            android:id="@+id/signup_gb_female"
-			            android:layout_width="wrap_content"
-			            android:layout_height="wrap_content"
-			            android:layout_weight="1"
-			            android:text="@string/female" />
-		    </RadioGroup>
-		    
-			<View style="@style/view01" />
+<!--         <TextView -->
+<!-- 	         style="@style/tv02" -->
+<!-- 	         android:text="@string/tv_register" /> -->
+<!--         <View -->
+<!--             android:layout_width="fill_parent" -->
+<!--         	 android:layout_height="3sp" -->
+<!--         	 android:background="@drawable/black" /> -->
+        
+		<View style="@style/view02" />
+		<TextView
+	        android:id="@+id/signup_tv_register"
+	        style="@style/tv02"
+	        android:text="@string/tv_essentialinformation" />
+	    <View style="@style/view03" />
+	    <View style="@style/view01" />
+	    <View style="@style/view01" />
+	    
+	    <TextView
+	        android:id="@+id/signup_tv_username"
+	        style="@style/tv01"
+	        android:text="@string/tv_username" />
 	
-			<TextView
-		        android:id="@+id/signup_tv_password"
-		        style="@style/tv01"
-		        android:text="@string/tv_password" />
-		
-		    <EditText
-		        android:id="@+id/signup_et_password"
-		        style="@style/et01"
-		        android:ems="10"
-		        android:hint="@string/password"
-		        android:inputType="textPassword" />
-		    
-		    <View style="@style/view01" />
-		    
-		    <TextView
-		        android:id="@+id/signup_tv_repeat"
-		        style="@style/tv01"
-		        android:text="@string/tv_repeat" />
-		
-		    <EditText
-		        android:id="@+id/signup_et_repeat"
-		        style="@style/et01"
-		        android:ems="10"
-		        android:hint="@string/repeat"
-		        android:inputType="textPassword" />
+	    <EditText
+	        android:id="@+id/signup_et_username"
+	        style="@style/et01"
+	        android:ems="10"
+	        android:hint="@string/username"
+	        android:inputType="textPersonName" >
 	
-		    <View style="@style/view01" />
-			
-			<TextView
-		        android:id="@+id/signup_tv_email"
-		        style="@style/tv01"
-		        android:text="@string/tv_email" />
+	        <requestFocus />
+	    </EditText>
+	    
+	    <View style="@style/view01" />
+	    
+	    <TextView
+	        android:id="@+id/signup_tv_gender"
+	        style="@style/tv01"
+	        android:text="@string/tv_gender" />
 		
-		    <EditText
-		        android:id="@+id/signup_et_email"
-		        style="@style/et01"
-		        android:ems="10"
-		        android:hint="@string/email"
-		        android:inputType="textPassword" />
+		<RadioGroup
+	        android:id="@+id/gender_rg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:orientation="horizontal"
+	        android:checkedButton="@+id/gender_gb_male"
+	        android:contentDescription="@string/gender" >
+		        <RadioButton
+		            android:id="@+id/gender_gb_male"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="@string/male" />
+		        <RadioButton
+		            android:id="@+id/signup_gb_female"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="@string/female" />
+	    </RadioGroup>
+	    
+		<View style="@style/view01" />
+
+		<TextView
+	        android:id="@+id/signup_tv_password"
+	        style="@style/tv01"
+	        android:text="@string/tv_password" />
 	
-		    <View style="@style/view02" />
-		    
-		    
-		    
-		    <TextView
-		        android:id="@+id/signup_tv_personalinformation"
-		        style="@style/tv02"
-		        android:text="@string/tv_personalinformation" />
-		    <View style="@style/view03" />
-		    <View style="@style/view01" />
-		    <View style="@style/view01" />
-		    
-		    <TextView
-		        android:id="@+id/signup_tv_realname"
-		        style="@style/tv01"
-		        android:text="@string/tv_realname" />
+	    <EditText
+	        android:id="@+id/signup_et_password"
+	        style="@style/et01"
+	        android:ems="10"
+	        android:hint="@string/password"
+	        android:inputType="textPassword" />
+	    
+	    <View style="@style/view01" />
+	    
+	    <TextView
+	        android:id="@+id/signup_tv_repeat"
+	        style="@style/tv01"
+	        android:text="@string/tv_repeat" />
+	
+	    <EditText
+	        android:id="@+id/signup_et_repeat"
+	        style="@style/et01"
+	        android:ems="10"
+	        android:hint="@string/repeat"
+	        android:inputType="textPassword" />
+
+	    <View style="@style/view01" />
 		
-		    <EditText
-		        android:id="@+id/signup_et_realname"
-		        style="@style/et01"
-		        android:ems="10"
-		        android:hint="@string/realname"
-		        android:inputType="textPersonName" />
-		    	    
-	   		<View style="@style/view01" />
-			    
-		    <TextView
-		        android:id="@+id/signup_tv_department"
-		        style="@style/tv01"
-		        android:text="@string/tv_department" />
-		
-		    <Spinner
-		        android:id="@+id/signup_sp_departments"
-		        style="@style/et01"
-		        android:entries="@array/departments"
-		        android:spinnerMode="dropdown" />
+		<TextView
+	        android:id="@+id/signup_tv_email"
+	        style="@style/tv01"
+	        android:text="@string/tv_email" />
+	
+	    <EditText
+	        android:id="@+id/signup_et_email"
+	        style="@style/et01"
+	        android:ems="10"
+	        android:hint="@string/email"
+	        android:inputType="textPassword" />
+
+	    <View style="@style/view02" />
+	    
+	    
+	    
+	    <TextView
+	        android:id="@+id/signup_tv_personalinformation"
+	        style="@style/tv02"
+	        android:text="@string/tv_personalinformation" />
+	    <View style="@style/view03" />
+	    <View style="@style/view01" />
+	    <View style="@style/view01" />
+	    
+	    <TextView
+	        android:id="@+id/signup_tv_realname"
+	        style="@style/tv01"
+	        android:text="@string/tv_realname" />
+	
+	    <EditText
+	        android:id="@+id/signup_et_realname"
+	        style="@style/et01"
+	        android:ems="10"
+	        android:hint="@string/realname"
+	        android:inputType="textPersonName" />
+	    	    
+   		<View style="@style/view01" />
 		    
-		    <View style="@style/view01" />
-			    
-		    <TextView
-		        android:id="@+id/signup_tv_grades"
-		        style="@style/tv01"
-		        android:text="@string/tv_grade" />
+	    <TextView
+	        android:id="@+id/signup_tv_department"
+	        style="@style/tv01"
+	        android:text="@string/tv_department" />
+	
+	    <Spinner
+	        android:id="@+id/signup_sp_departments"
+	        style="@style/et01"
+	        android:entries="@array/departments"
+	        android:spinnerMode="dropdown" />
+	    
+	    <View style="@style/view01" />
+		    
+	    <TextView
+	        android:id="@+id/signup_tv_grades"
+	        style="@style/tv01"
+	        android:text="@string/tv_grade" />
+	
+	    <Spinner
+	        android:id="@+id/signup_sp_grades"
+	        style="@style/et01"
+	        android:entries="@array/grades"
+	        android:spinnerMode="dropdown" />
 		
-		    <Spinner
-		        android:id="@+id/signup_sp_grades"
-		        style="@style/et01"
-		        android:entries="@array/grades"
-		        android:spinnerMode="dropdown" />
-			
-	   		<View style="@style/view01" />
-	   		
-	   		<TextView
-		        android:id="@+id/signup_tv_studentid"
-		        style="@style/tv01"
-		        android:text="@string/tv_studentid" />
-	   		
-	   		<EditText
-		        android:id="@+id/signup_et_studentid"
-		        style="@style/et01"
-		        android:ems="10"
-		        android:hint="@string/studentid"
-		        android:inputType="textPersonName" />
-	   		
-	   		<View style="@style/view02" />
-	   		
-			<Button
-			    android:id="@+id/signup_bt_signup"
-			    style="@style/bt01"
-			    android:text="@string/signup" />
-			
-	   		<View style="@style/view02" />
-	   		
+   		<View style="@style/view01" />
+   		
+   		<TextView
+	        android:id="@+id/signup_tv_studentid"
+	        style="@style/tv01"
+	        android:text="@string/tv_studentid" />
+   		
+   		<EditText
+	        android:id="@+id/signup_et_studentid"
+	        style="@style/et01"
+	        android:ems="10"
+	        android:hint="@string/studentid"
+	        android:inputType="textPersonName" />
+   		
+   		<View style="@style/view02" />
+   		
+		<Button
+		    android:id="@+id/signup_bt_signup"
+		    style="@style/bt01"
+		    android:text="@string/signup" />
+		
+   		<View style="@style/view02" />
+   		
 	</LinearLayout>
 </ScrollView>

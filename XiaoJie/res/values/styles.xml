@@ -30,6 +30,19 @@
     	<item name="android:textStyle">bold</item>
     </style>
     
+    <style name="bt_fill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+    	<item name="android:paddingTop">10dip</item>
+    	<item name="android:paddingBottom">10dip</item>
+    	<item name="android:paddingLeft">50dip</item>
+    	<item name="android:paddingRight">50dip</item>
+    	<item name="android:background">@drawable/presschangebackground</item>
+    	<item name="android:textColor">@drawable/white</item>
+    	<item name="android:textStyle">bold</item>
+    </style>
+    
     <style name="tv01">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -45,6 +58,14 @@
         <item name="android:layout_marginRight">10dip</item>
         <item name="android:textColor">@drawable/darkblue</item>
         <item name="android:textSize">23sp</item>
+    </style>
+    
+        <style name="tv03">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+        <item name="android:textSize">14sp</item>
     </style>
     
     <style name="et01">
@@ -73,5 +94,41 @@
         <item name="android:layout_marginRight">10dip</item>
         <item name="android:background">@drawable/blue</item>
     </style>
+    
+    <style name="view04">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2sp</item>
+        <item name="android:background">@drawable/blue</item>
+    </style>
+    
+    <style name="view_slim_blue">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:background">@drawable/blue</item>
+    </style>
 
+    <style name="view_slim_grey">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:background">@drawable/grey</item>
+    </style>
+    
+    <style name="ly_memo01">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">20dip</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+    </style>
+    
+    <style name="ly_memo02">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+    </style>
+    
 </resources>

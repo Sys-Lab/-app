@@ -16,5 +16,6 @@
     <drawable name="darkgrey">#80444444</drawable>
     <drawable name="lightgrey">#80cccccc</drawable>
     <drawable name="transparent">#00000000</drawable>
-
+	<drawable name="memo">#80e8e8c3</drawable>
+    
 </resources>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:text="@string/listview" />
+
+    <View style="@style/view04" />
+    
+    <!--
+        android:cacheColorHint="#00000000" 缓存的颜色  默认是黄色
+        android:divider="#00777777" 分割线
+        android:dividerHeight="3.0dip" 分割线的宽度
+　  　　　android:fastScrollEnabled="true" 支持快速滑动
+          -->
+    <ListView
+        android:id="@+id/lv_activities"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/blue"
+        android:dividerHeight="0.5dip"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+</LinearLayout>
