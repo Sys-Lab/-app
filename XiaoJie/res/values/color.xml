@@ -13,9 +13,14 @@
     <drawable name="yellow">#80ffff00</drawable>
     <drawable name="lightyellow">#80ffff88</drawable>
     <drawable name="grey">#80888888</drawable>
+    <drawable name="bggrey">#80f0f0f0</drawable>
     <drawable name="darkgrey">#80444444</drawable>
     <drawable name="lightgrey">#80cccccc</drawable>
     <drawable name="transparent">#00000000</drawable>
 	<drawable name="memo">#80e8e8c3</drawable>
+	
+<!-- 	<drawable name="border"> -->
+<!-- 	    < -->
+<!-- 	</drawable> -->
     
 </resources>
